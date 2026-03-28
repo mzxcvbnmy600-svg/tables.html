@@ -2,15 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
 body {
     min-height: 100vh;
-    display: flex;       
+    display: flex;
     align-items: center;
     justify-content: center;
-
+    background: linear-gradient(to right, rgb(11, 230, 175));
+    padding: 8px;
+    text-align: left;
 
 }
 
@@ -30,27 +33,46 @@ table thead tr th {
     padding: 8px;
     min-width: 200px;
 
+
+}
+
+tfoot tr td {
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    text-align: left;
 }
 
 table tbody tr td {
     padding: 8px;
-    text-align: center;
-}
+    text-align: left;
 
-table tbody tr:nth-last-child(odd) td {
-    background-color: slategray;
 }
 
 table tbody tr:nth-last-child(even) td {
+    background-color: #1a1717;
+}
+
+table tbody tr:nth-last-child(odd) td {
     background-color: #000;
 
 }
 
-td div{
-    background-color: rgb(11, 236, 150);
+table tbody tr div td {
+    background-color: slategrey;
     color: #fff;
     padding: 5px;
     border: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.btn-Select {
+    background-color: rgb(11, 230, 175);
+    color: #fff;
+    padding: 4px;
+    border: none;
     border-radius: 8px;
     cursor: pointer;
 }
